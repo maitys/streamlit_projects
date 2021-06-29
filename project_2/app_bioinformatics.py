@@ -14,7 +14,7 @@ import plotly.io as pio
 # Page Title
 ######################
 
-image = Image.open('dna-logo.jpg')
+image = Image.open('project_2/dna-logo.jpg')
 
 st.image(image, use_column_width=True)
 
