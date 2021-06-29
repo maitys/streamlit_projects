@@ -1,0 +1,6 @@
+pandas
+streamlit
+altair
+pillow
+matplotlib
+plotly
