@@ -12,7 +12,7 @@ tickerSymbol = 'GME'
 # get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 # get the historical prices for this ticker
-tickerDf = tickerData.history(period='1d', start='2010-5-31', end='2021-1-31')
+tickerDf = tickerData.history(period='1d', start='2010-05-31', end='2021-01-31')
 # Open	High	Low	Close	Volume	Dividends	Stock Splits
 
 st.write("""
