@@ -1,3 +1,6 @@
+################
+#### TEST 1 ####
+################
 # from tkinter.font import families
 # import streamlit as st
 # from streamlit_option_menu import option_menu
@@ -36,15 +39,33 @@
 # elif choose == "Browser":
 #     st.title("Browser: {}".format(name))
 
+################
+#### TEST 2 ####
+################
+# import streamlit as st
+# with st.sidebar.form("Input"):
+#     queryText = st.text_area("Site to Run:", height=3, max_chars=None)
+#     btnResult = st.form_submit_button('Run')
 
-    
+# if btnResult:
+#     st.sidebar.text('Button pushed')
+
+#     # run query
+#     st.write("Running query for: {}".format(queryText))
+
+################
+#### TEST 3 ####
+################
 import streamlit as st
-with st.sidebar.form("Input"):
-    queryText = st.text_area("Site to Run:", height=3, max_chars=None)
-    btnResult = st.form_submit_button('Run')
+form = st.form("my_form")
+cols = form.columns((1,1,1))
+x = cols[0].slider("x")
+y = cols[1].slider("y")
+z = cols[2].slider("z")
 
-if btnResult:
-    st.sidebar.text('Button pushed')
+# Now add a submit button to the form:
+form.form_submit_button("Submit")
 
-    # run query
-    st.write("Running query for: {}".format(queryText))
+st.write(x)
+st.write(y)
+st.write(z)
